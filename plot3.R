@@ -13,7 +13,7 @@ powerdata$Time <- strptime(x, "%Y-%m-%d %H:%M:%S")
 
 #generate plots of sub metering vs time - coloring each measurement differently
 
-png(filename="plot3.png")
+png(filename="plot3.png", width=480, height=480)
 
 with(powerdata, plot(Time, Global_active_power, type="n",  ylab = "Energy sub metering", xlab = "", ylim=c(0,40)))
 
