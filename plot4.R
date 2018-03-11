@@ -13,7 +13,7 @@
 
 #generate 4 sets of plots to include the plot of sub metering vs time, Global Active Power vs time, Voltage vs time, and Global Reactive power vs time
 
-png(filename="plot4.png")
+png(filename="plot4.png", width=480, height=480)
 par(mfcol = c(2,2), mar =c(4,4,2,1))
 
 #plot 1
