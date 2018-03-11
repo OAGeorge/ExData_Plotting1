@@ -14,7 +14,7 @@ powerdata$Time <- strptime(x, "%Y-%m-%d %H:%M:%S")
 
 rm("X", "x")
 #generate the png of the data
-png(filename="plot1.png")
+png(filename="plot1.png", width=480, height=480)
 
 with(powerdata, hist(Global_active_power, col="red", main="Global Active Power", xlab = "Global Active Power (kilowatts)"))
  
